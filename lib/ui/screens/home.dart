@@ -40,7 +40,6 @@ class HomeScreen extends StatelessWidget {
                 spacer(height: 20),
                 Container(
                   padding: const EdgeInsets.only(left: 20),
-                  decoration: BoxDecoration(color: Colors.black.withOpacity(0.1)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -48,7 +47,9 @@ class HomeScreen extends StatelessWidget {
                       IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_forward_ios_rounded),),
                     ],
                   ),
-                )
+                ),
+                spacer(height: 20),
+                Text('Weather seems to be partly cloudy today. Make good preparations', style: TextStyle(fontSize: 16),)
               ],
             ),
           ),
